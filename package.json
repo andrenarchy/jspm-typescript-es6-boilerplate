@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bundle": "jspm bundle-sfx src/index bundle.es6.js && ( babel bundle.es6.js | uglifyjs -c -m > bundle.min.js)",
+    "bundle": "jspm bundle-sfx src/index.ts! bundle.es6.js && ( babel bundle.es6.js | uglifyjs -c -m > bundle.min.js)",
     "install-deps": "npm install && jspm install && typings install",
-    "serve": "live-server",
+    "serve": "live-server --mount=/:src --watch=src --no-browser",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "jspm": {
+    "baseUrl": "src",
+    "configFile": "jspm.config.js",
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.4.9",
       "babel-polyfill": "npm:babel-polyfill@^6.3.14",

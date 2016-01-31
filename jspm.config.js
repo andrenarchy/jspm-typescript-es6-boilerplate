@@ -10,25 +10,6 @@ System.config({
     "npm:*": "jspm_packages/npm/*",
     "github:*": "jspm_packages/github/*"
   },
-
-  packages: {
-    "src": {
-      "main": "index",
-      "defaultExtension": "ts",
-      "meta": {
-        "*.ts": {
-          "loader": "ts"
-        },
-        "*.css": {
-          "loader": "css"
-        },
-        "*.html": {
-          "loader": "text"
-        }
-      }
-    }
-  },
-
   map: {
     "angular": "github:angular/bower-angular@1.4.9",
     "babel-polyfill": "npm:babel-polyfill@6.3.14",
