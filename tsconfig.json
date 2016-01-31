@@ -2,11 +2,11 @@
   "compilerOptions": {
     "module": "system",
     "noImplicitAny": true,
-    "outDir": "build-ts",
     "target": "es6"
   },
   "files": [
     "src/index.ts",
     "typings/main.d.ts"
-  ]
+  ],
+  "compileOnSave": false
 }
