@@ -6,7 +6,7 @@
   "scripts": {
     "bundle": "jspm bundle-sfx src/index.ts! bundle.es6.js && ( babel bundle.es6.js | uglifyjs -c -m > bundle.min.js)",
     "install-deps": "npm install && jspm install && typings install",
-    "serve": "live-server --mount=/:src --watch=src --no-browser",
+    "serve": "live-server --mount=/:src --watch=src --no-browser --wait=250",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
