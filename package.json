@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "bundle": "jspm build src/index.ts bundle.js && uglifyjs bundle.js > bundle.min.js",
+    "serve": "live-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jspm": "^0.17.0-beta.5",
-    "live-server": "^0.9.1"
+    "live-server": "^0.9.1",
+    "uglifyjs": "^2.4.10"
   },
   "jspm": {
     "dependencies": {
