@@ -16,4 +16,4 @@ Open `http://localhost:8080` and hack!
 ```
 npm run bundle
 ```
-Open `http://localhost:8080/index-bundle.html`.
+Run `npm run serve` and open `http://localhost:8080/index-bundle.html`.
