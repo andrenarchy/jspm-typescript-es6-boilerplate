@@ -20,6 +20,7 @@
       "ts": "github:frankwallis/plugin-typescript@^2.5.8"
     },
     "devDependencies": {
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.2",
       "plugin-typescript": "github:frankwallis/plugin-typescript@^2.5.8"
     },
     "peerDependencies": {

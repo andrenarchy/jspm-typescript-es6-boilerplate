@@ -5,15 +5,19 @@ SystemJS.config({
     "npm:*.json"
   ],
   globalEvaluationScope: false,
-  transpiler: "plugin-typescript",
+  transpiler: "plugin-babel",
   typescriptOptions: {
-    tsconfig: true
+    "module": "es6",
+    "target": "es6",
+    "sourceMap": false
   },
+
   map: {
     "angular": "github:angular/bower-angular@1.4.9",
     "assert": "github:jspm/nodelibs-assert@0.2.0-alpha",
     "paperhive-sources": "npm:paperhive-sources@4.0.1",
     "pdfjs": "github:mozilla/pdfjs-dist@1.4.37",
+    "plugin-babel": "npm:systemjs-plugin-babel@0.0.2",
     "plugin-typescript": "github:frankwallis/plugin-typescript@2.5.8",
     "process": "github:jspm/nodelibs-process@0.2.0-alpha",
     "ts": "github:frankwallis/plugin-typescript@2.5.8",
@@ -22,6 +26,7 @@ SystemJS.config({
 
   packages: {
     "src": {
+      "defaultExtension": "ts",
       "meta": {
         "*.ts": {
           "loader": "ts"
