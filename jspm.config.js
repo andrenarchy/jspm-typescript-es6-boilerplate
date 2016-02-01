@@ -7,9 +7,8 @@ SystemJS.config({
   globalEvaluationScope: false,
   transpiler: "plugin-babel",
   typescriptOptions: {
-    "module": "es6",
-    "target": "es6",
-    "sourceMap": false
+    tsconfig: true,
+    typeCheck: true
   },
 
   map: {
