@@ -1,3 +1,6 @@
-import 'angular';
-import 'pdfjs';
-console.log('lol schlömi');
+// import 'angular';
+// import 'pdfjs';
+
+import {num} from './utils.ts';
+
+console.log('lol schlömi', num);
