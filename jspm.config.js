@@ -7,8 +7,8 @@ SystemJS.config({
   globalEvaluationScope: false,
   transpiler: "plugin-babel",
   typescriptOptions: {
-    tsconfig: true,
-    typeCheck: true
+    "tsconfig": true,
+    "typeCheck": true
   },
 
   map: {
@@ -16,6 +16,7 @@ SystemJS.config({
     "assert": "github:jspm/nodelibs-assert@0.2.0-alpha",
     "paperhive-sources": "npm:paperhive-sources@4.0.1",
     "pdfjs": "github:mozilla/pdfjs-dist@1.4.37",
+    "pdfjs-dist": "github:mozilla/pdfjs-dist@1.4.37",
     "plugin-babel": "npm:systemjs-plugin-babel@0.0.2",
     "plugin-typescript": "github:frankwallis/plugin-typescript@2.5.8",
     "process": "github:jspm/nodelibs-process@0.2.0-alpha",

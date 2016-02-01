@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "bundle": "jspm build src/index.ts bundle.js && uglifyjs bundle.js > bundle.min.js",
-    "serve": "live-server",
+    "install-deps": "npm install && jspm install",
+    "serve": "live-server --no-browser",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
