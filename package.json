@@ -1,0 +1,53 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "^0.17.0-beta.5",
+    "live-server": "^0.9.1"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.9",
+      "paperhive-sources": "npm:paperhive-sources@^4.0.1",
+      "pdfjs-dist": "github:mozilla/pdfjs-dist@^1.4.37",
+      "ts": "github:frankwallis/plugin-typescript@^2.5.8"
+    },
+    "devDependencies": {
+      "plugin-typescript": "github:frankwallis/plugin-typescript@^2.5.8"
+    },
+    "peerDependencies": {
+      "assert": "github:jspm/nodelibs-assert@^0.2.0-alpha",
+      "process": "github:jspm/nodelibs-process@^0.2.0-alpha",
+      "url": "github:jspm/nodelibs-url@^0.2.0-alpha"
+    },
+    "overrides": {
+      "github:angular/bower-angular@1.4.9": {
+        "main": "angular",
+        "meta": {
+          "angular.js": {
+            "exports": "angular"
+          }
+        }
+      },
+      "npm:typescript@1.7.5": {
+        "browser": {},
+        "map": {
+          "buffer": "@empty",
+          "child_process": "@empty",
+          "fs": "@empty",
+          "os": "@empty",
+          "path": "@empty",
+          "process": "@empty",
+          "readline": "@empty"
+        }
+      }
+    }
+  }
+}
