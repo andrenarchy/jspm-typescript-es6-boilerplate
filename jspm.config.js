@@ -6,7 +6,9 @@ SystemJS.config({
   ],
   globalEvaluationScope: false,
   transpiler: "plugin-typescript",
-
+  typescriptOptions: {
+    tsconfig: true
+  },
   map: {
     "angular": "github:angular/bower-angular@1.4.9",
     "assert": "github:jspm/nodelibs-assert@0.2.0-alpha",
