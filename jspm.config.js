@@ -6,21 +6,20 @@ SystemJS.config({
   ],
   globalEvaluationScope: false,
   transpiler: "plugin-babel",
+
+  map: {
+    "angular": "github:angular/bower-angular@1.5.0",
+    "assert": "github:jspm/nodelibs-assert@0.2.0-alpha",
+    "paperhive-sources": "npm:paperhive-sources@4.0.1",
+    "pdfjs-dist": "github:mozilla/pdfjs-dist@1.4.44",
+    "plugin-babel": "npm:systemjs-plugin-babel@0.0.2",
+    "process": "github:jspm/nodelibs-process@0.2.0-alpha",
+    "ts": "github:frankwallis/plugin-typescript@3.0.1",
+    "url": "github:jspm/nodelibs-url@0.2.0-alpha"
+  },
   typescriptOptions: {
     "tsconfig": true,
     "typeCheck": true
-  },
-
-  map: {
-    "angular": "github:angular/bower-angular@1.4.9",
-    "assert": "github:jspm/nodelibs-assert@0.2.0-alpha",
-    "paperhive-sources": "npm:paperhive-sources@4.0.1",
-    "pdfjs": "github:mozilla/pdfjs-dist@1.4.37",
-    "pdfjs-dist": "github:mozilla/pdfjs-dist@1.4.37",
-    "plugin-babel": "npm:systemjs-plugin-babel@0.0.2",
-    "process": "github:jspm/nodelibs-process@0.2.0-alpha",
-    "ts": "github:frankwallis/plugin-typescript@2.6.0",
-    "url": "github:jspm/nodelibs-url@0.2.0-alpha"
   },
 
   packages: {
@@ -32,9 +31,9 @@ SystemJS.config({
         }
       }
     },
-    "github:frankwallis/plugin-typescript@2.6.0": {
+    "github:frankwallis/plugin-typescript@3.0.1": {
       "map": {
-        "typescript": "npm:typescript@1.7.5"
+        "typescript": "npm:typescript@1.9.0-dev.20160206"
       }
     },
     "github:jspm/nodelibs-url@0.2.0-alpha": {
