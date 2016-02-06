@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bundle": "jspm build src/index.ts bundle.js && uglifyjs bundle.js > bundle.min.js",
+    "bundle": "jspm build src/index.ts bundle.js --global-name src/index.ts",
     "install-deps": "npm install && jspm install",
     "serve": "live-server --no-browser",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jspm": "^0.17.0-beta.5",
+    "jspm": "^0.17.0-beta.6",
     "live-server": "^0.9.1",
     "uglifyjs": "^2.4.10"
   },
@@ -20,12 +20,11 @@
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.4.9",
       "paperhive-sources": "npm:paperhive-sources@^4.0.1",
-      "pdfjs-dist": "github:mozilla/pdfjs-dist@^1.4.37",
-      "ts": "github:frankwallis/plugin-typescript@^2.5.8"
+      "pdfjs-dist": "github:mozilla/pdfjs-dist@^1.4.37"
     },
     "devDependencies": {
       "plugin-babel": "npm:systemjs-plugin-babel@^0.0.2",
-      "plugin-typescript": "github:frankwallis/plugin-typescript@^2.5.8"
+      "ts": "github:frankwallis/plugin-typescript@^3.0.1"
     },
     "peerDependencies": {
       "assert": "github:jspm/nodelibs-assert@^0.2.0-alpha",
@@ -33,7 +32,7 @@
       "url": "github:jspm/nodelibs-url@^0.2.0-alpha"
     },
     "overrides": {
-      "github:angular/bower-angular@1.4.9": {
+      "github:angular/bower-angular@1.5.0": {
         "main": "angular",
         "meta": {
           "angular.js": {
@@ -41,7 +40,7 @@
           }
         }
       },
-      "npm:typescript@1.7.5": {
+      "npm:typescript@1.9.0-dev.20160206": {
         "browser": {},
         "map": {
           "buffer": "@empty",

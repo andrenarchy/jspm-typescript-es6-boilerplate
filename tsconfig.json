@@ -4,7 +4,7 @@
     "noEmit": true,
     "module": "es6",
     "target": "es6",
-    "sourceMap": false
+    "sourceMap": true
   },
   "files": [
     "src/index.ts"
